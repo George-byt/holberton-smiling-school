@@ -1,0 +1,76 @@
+/* Variables
+      ============================= */
+    :root {
+        --font-family: 'Source Sans Pro';
+
+        --btn-background-color: #C271FF;
+    }
+/* Global
+      ============================= */
+    body {
+        font-family: var(--font-family);
+    }
+    img {
+        width: 100%;
+    }
+
+/* Header
+      ============================= */
+    .header {
+        background: url(images/pic_1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+/* Hero Section
+      ============================= */
+    .title {
+        font-size: 120px;
+    }
+    .btn {
+        background-color: var(--btn-background-color);
+        border-radius: 22px;
+    }
+    .btn:hover {
+        opacity: 0.9;
+    }
+    .span {
+        font-size: 32px;
+        color: white;
+    }
+    .strong {
+        color: #C271FF;
+    }
+    .article {
+        width: 200px;
+        height: auto;
+    }
+    .article h1 {
+        font-size: 18px;
+    }
+
+/* Carousel Section
+      ============================= */
+    .carousel-section {
+        background: #C271FF;
+    }
+    .carousel-item {
+        background: #C271FF;
+        color: #ffffff;
+    }
+    .profile-carousel {
+        width: 150px;
+    }
+    .media {
+        margin: auto;
+        width: 70%;
+    }
+    .blockquote-footer p{
+        font-size: 22px;
+        font-weight: bolder;
+    }
+    .blockquote-footer cite {
+        font-size: 22px;
+        font-weight: lighter;
+    }
