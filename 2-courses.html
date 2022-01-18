@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Courses</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1, viewport-fit=cover'>
+    <link rel='icon' type='image/png' href='./images/favicon.ico'>
+    <!-- External libraries -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- CSS Styling -->
+    <link rel="stylesheet" href="holberton_school-icon/style.css" type="text/css" />
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header"
+        style="background: url(images/pic_2.jpg); background-position: center; background-size: cover; background-repeat: no-repeat;">
+        <div class="container">
+            <div class="header-container p-3">
+                <div class="logo p-3">
+                    <img src="images/smile_off.png" alt="" style="width: 37px;">
+                    <img src="images/logo.png" alt="" style="width: 114px;">
+                </div>
+
+                <nav class="navbar-menu">
+                    <ul class="nav text-uppercase">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">
+                                courses
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">
+                                pricing
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">
+                                login
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <h1 class="text-center text-white " style="margin: 0;">
+                « Don’t cry because it’s over.
+                <br>
+                <span class="strong">Smile</span> because it happened. »
+            </h1>
+        </section>
+
+    </header>
+    <main>
+        <!-- Search Filters Section -->
+        <section class="search-filters d-flex align-items-center" style="background-color: #C271FF; height: 138px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <label for="user_search" class="text-white text-uppercase">keywords</label>
+                        <input type="search" class="form-control mx-auto border-0 rounded-0" id="user_search"
+                            placeholder="Search by keywords" aria-label="user_search" aria-describedby="basic-addon1"
+                            style="background-color: hsla(0, 0%, 100%, 0.25);">
+                    </div>
+                    <div class="col">
+                        <label class="text-white text-uppercase">topic</label>
+                        <div class="dropdown">
+                            <button class="btn rounded-0 text-left text-white w-100 dropdown-toggle" type="button"
+                                id="dropdown-topic" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                style="background-color: hsla(0, 0%, 100%, 0.25);">
+                                Novice
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <button class="dropdown-item" type="button">Novice</button>
+                                <button class="dropdown-item" type="button">Intermediate</button>
+                                <button class="dropdown-item" type="button">Expert</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <label class="text-white text-uppercase">sort by</label>
+                        <div class="dropdown">
+                            <button class="btn rounded-0 text-left text-white w-100 dropdown-toggle" type="button"
+                                id="dropdown-sort-by" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                style="background-color: hsla(0, 0%, 100%, 0.25);">
+                                Most Popular
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <button class="dropdown-item" type="button">Most Popular</button>
+                                <button class="dropdown-item" type="button">Most Recent</button>
+                                <button class="dropdown-item" type="button">Most Viewed</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Courses Section -->
+        <section class="courses-section">
+        
+        </section>
+    </main>
+</body>
+
+</html>
