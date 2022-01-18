@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
 
@@ -120,7 +122,7 @@
     <main>
         <section class="carousel-section">
             <div class="container-fluid">
-                <div id="carousel-controls" class="carousel slide">
+                <div class="carousel slide" id="carousel-controls">
                     <!-- Bootstrap inner [slides] -->
                     <div class="carousel-inner">
                         <!-- Carousel slide-->
@@ -193,15 +195,13 @@
                             </div>
                         </div>
                         <!-- Bootstrap controls [dots]-->
-                        <a class="carousel-control-prev" href="#carousel-controls" role="button"
-                            data-slide="prev">
+                        <a class="carousel-control-prev" href="#carousel-controls" role="button" data-slide="prev">
                             <span>
                                 <img src="images/arrow_white_left.png" alt="">
                             </span>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a class="carousel-control-next" href="#carousel-controls" role="button"
-                            data-slide="next">
+                        <a class="carousel-control-next" href="#carousel-controls" role="button" data-slide="next">
                             <span>
                                 <img src="images/arrow_white_right.png" alt="">
                             </span>
@@ -211,16 +211,163 @@
                 </div>
             </div>
         </section>
-        <section class="popular-section">
-            <div class="container-fluid">
-                <h1 class="text-center">
+        <section class="tutorial-section">
+            <div class="container-fluid pt-5 pb-5">
+                <h1 class="text-center pb-5">
                     Most <strong class="strong">popular</strong> tutorials
                 </h1>
-                <div class="card">
-                    <img src="images/" alt="">
+                <div class="carousel slide" id="tutorials-controls">
+                    <div class="carousel-inner">
+                        <div class="carousel-item pt-4 pb-4 active text-dark" style="background: none;">
+                            <div class="row d-flex justify-content-between" style="width: 70%; margin: auto;">
+                                <div class="card">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <img class="card-img-top" src="images/thumbnail_4.jpg" alt="Diagonal smile">
+                                        <img class="align-self-center" src="images/play.png" alt="Play icon"
+                                            style=" width: 40%; position: absolute;">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="font-weight: bolder;">
+                                            Diagonal Smile
+                                        </h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.
+                                        </p>
+                                    </div>
+                                    <div class="card-body d-flex align-items-center">
+                                        <img class="rounded-circle mr-3" style="width: 15%;" src="images/profile_1.jpg"
+                                            alt="">
+                                        <h6 class="m-0" style="color: #C271FF; font-weight: bolder;">
+                                            Phillip Massey
+                                        </h6>
+                                    </div>
+                                    <div class="card-footer d-flex justify-content-between">
+                                        <div>
+                                            <img class="star-icon" src="images/star_on.png" alt="">
+                                            <img class="star-icon" src="images/star_on.png" alt="">
+                                            <img class="star-icon" src="images/star_on.png" alt="">
+                                            <img class="star-icon" src="images/star_on.png" alt="">
+                                            <img class="star-icon" src="images/star_off.png" alt="">
+                                        </div>
+                                        <span style="color: #C271FF; font-weight: bolder;">8 min</span>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <img class="card-img-top" src="images/thumbnail_3.jpg" alt="Diagonal smile">
+                                        <img class="align-self-center" src="images/play.png" alt="Play icon"
+                                            style=" width: 40%; position: absolute;">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="font-weight: bolder;">
+                                            Diagonal Smile
+                                        </h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.
+                                        </p>
+                                    </div>
+                                    <div class="card-body d-flex align-items-center">
+                                        <img class="rounded-circle mr-3" style="width: 15%;" src="images/profile_1.jpg"
+                                            alt="">
+                                        <h6 class="m-0" style="color: #C271FF; font-weight: bolder;">
+                                            Phillip Massey
+                                        </h6>
+                                    </div>
+                                    <div class="card-footer d-flex justify-content-between">
+                                        <div>
+                                            <img class="star-icon" src="images/star_on.png" alt="">
+                                            <img class="star-icon" src="images/star_on.png" alt="">
+                                            <img class="star-icon" src="images/star_on.png" alt="">
+                                            <img class="star-icon" src="images/star_on.png" alt="">
+                                            <img class="star-icon" src="images/star_off.png" alt="">
+                                        </div>
+                                        <span style="color: #C271FF; font-weight: bolder;">8 min</span>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <img class="card-img-top" src="images/thumbnail_2.jpg" alt="Diagonal smile">
+                                        <img class="align-self-center" src="images/play.png" alt="Play icon"
+                                            style=" width: 40%; position: absolute;">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="font-weight: bolder;">
+                                            Diagonal Smile
+                                        </h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.
+                                        </p>
+                                    </div>
+                                    <div class="card-body d-flex align-items-center">
+                                        <img class="rounded-circle mr-3" style="width: 15%;" src="images/profile_1.jpg"
+                                            alt="">
+                                        <h6 class="m-0" style="color: #C271FF; font-weight: bolder;">
+                                            Phillip Massey
+                                        </h6>
+                                    </div>
+                                    <div class="card-footer d-flex justify-content-between">
+                                        <div>
+                                            <img class="star-icon" src="images/star_on.png" alt="">
+                                            <img class="star-icon" src="images/star_on.png" alt="">
+                                            <img class="star-icon" src="images/star_on.png" alt="">
+                                            <img class="star-icon" src="images/star_on.png" alt="">
+                                            <img class="star-icon" src="images/star_off.png" alt="">
+                                        </div>
+                                        <span style="color: #C271FF; font-weight: bolder;">8 min</span>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <img class="card-img-top" src="images/thumbnail_1.jpg" alt="Diagonal smile">
+                                        <img class="align-self-center" src="images/play.png" alt="Play icon"
+                                            style=" width: 40%; position: absolute;">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="font-weight: bolder;">
+                                            Diagonal Smile
+                                        </h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.
+                                        </p>
+                                    </div>
+                                    <div class="card-body d-flex align-items-center">
+                                        <img class="rounded-circle mr-3" style="width: 15%;" src="images/profile_1.jpg"
+                                            alt="">
+                                        <h6 class="m-0" style="color: #C271FF; font-weight: bolder;">
+                                            Phillip Massey
+                                        </h6>
+                                    </div>
+                                    <div class="card-footer d-flex justify-content-between">
+                                        <div>
+                                            <img class="star-icon" src="images/star_on.png" alt="">
+                                            <img class="star-icon" src="images/star_on.png" alt="">
+                                            <img class="star-icon" src="images/star_on.png" alt="">
+                                            <img class="star-icon" src="images/star_on.png" alt="">
+                                            <img class="star-icon" src="images/star_off.png" alt="">
+                                        </div>
+                                        <span style="color: #C271FF; font-weight: bolder;">8 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Bootstrap controls [dots]-->
+                        <a class="carousel-control-prev" href="#tutorials-controls" role="button" data-slide="prev">
+                            <span>
+                                <img src="images/arrow_black_left.png" alt="">
+                            </span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#tutorials-controls" role="button" data-slide="next">
+                            <span>
+                                <img src="images/arrow_black_right.png" alt="">
+                            </span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 </body>
+
 </html>
