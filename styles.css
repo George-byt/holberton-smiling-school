@@ -1,9 +1,17 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+@import 'holberton_school-icon/style.css';
+
 /* Variables
       ============================= */
     :root {
         --font-family: 'Source Sans Pro';
 
         --btn-background-color: #C271FF;
+        --membership-background-color: #071629;
+        --footer-background-color: #071629;
     }
 /* Global
       ============================= */
@@ -16,17 +24,43 @@
 
 /* Header
       ============================= */
-    .header {
-        background: url(images/pic_1.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar-menu {
+        display: flex;
+    }
+    .nav {
+        display: flex;
+        align-items: center;
+    }
+
+    @media (max-width: 575px) {
+        .header-container {
+            flex-direction: column;
+        }
+        .header-container .logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header-container .navbar-menu .nav {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+        }
     }
 
 /* Hero Section
       ============================= */
+    .header-hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .title {
-        font-size: 120px;
+        font-size: 130px;
     }
     .btn {
         background-color: var(--btn-background-color);
@@ -35,21 +69,36 @@
     .btn:hover {
         opacity: 0.9;
     }
-    .span {
-        font-size: 32px;
-        color: white;
-    }
     .strong {
         color: #C271FF;
     }
-    .article {
-        width: 200px;
-        height: auto;
+    .box {
+        width: 150px;
     }
-    .article h1 {
-        font-size: 18px;
+    .boxes {
+        display: flex;
+        justify-content: space-between;
+        
     }
 
+    @media (max-width: 768px) {
+        .title {
+            font-size: 120px;
+        }
+    }
+
+    @media (max-width: 575px) {
+        .title {
+            font-size: 55px;
+        }
+        .boxes {
+            flex-wrap: wrap;
+            padding: 0;
+        }
+        .box {
+            margin-bottom: 2em;
+        }
+    }
 /* Carousel Section
       ============================= */
     .carousel-section {
@@ -73,4 +122,103 @@
     .blockquote-footer cite {
         font-size: 22px;
         font-weight: lighter;
+    }
+    @media (max-width: 575px) {
+        .media {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+        }
+        .carousel-control-prev {
+            height: 35%;
+        }
+        .carousel-control-next {
+            height: 35%;
+        }
+    }
+
+/* Popular tutorials Section
+      ============================= */
+    .card {
+        width: 24%;
+    }
+    .star-icon {
+        width: 1rem;
+        height: 1rem;
+    }
+
+/* Membership Section
+      ============================= */
+    .membership-section {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--membership-background-color);
+        color: #ffffff;
+    }
+    .articles {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @media (max-width: 768px) {
+        .articles {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        .article {
+            margin-bottom: 2em;
+        }
+    }
+    @media (max-width: 375px) {
+        .articles {
+            display: flex;
+            flex-direction: column;
+        }
+        .article {
+            align-items: center;
+            margin-bottom: 2em;
+        }
+    }
+
+/* Footer
+      ============================= */
+    .footer {
+        background-color: var(--footer-background-color);
+    }
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    @media (max-width: 575px) {
+        .footer-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2em;
+        }
+    }
+
+    .dropdown button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #ffffff;
+        opacity: 1; /* Firefox */
+    }
+
+
+    .cards-responsive {
+        display: flex;
+    }
+    @media (max-width: 768px) {
+        .cards-responsive {
+            display: grid;
+        }
     }
