@@ -4,12 +4,16 @@
 
 /* Global
     =========================== */
-  
+    
     *, *:before, *:after {
         box-sizing: border-box;
     }
     html {
         font-family: 'Source Sans Pro';
+    }
+    .btn {
+        background-color: #C271FF;
+        border-radius: 22px;
     }
 
 /* Header
