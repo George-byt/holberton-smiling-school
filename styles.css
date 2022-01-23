@@ -22,12 +22,6 @@
     }
 
 
-    @media (max-width: 576px) {
-        .play {
-            padding-top: 3em;
-            width: 20%;
-        }
-    }
 /* Header
     ============================ */
     .nav-link {
@@ -110,6 +104,40 @@
     .tutorial {
         display: flex;
         flex-direction: column;
+    }
+
+    .video-container {
+        margin: auto;
+        width: 70%;
+    }
+
+/*    @media (max-width: 576px) {
+        .play {
+            padding-top: 3em;
+            width: 20%;
+        }
+    } */
+
+
+    @media (min-width: 768px) {
+        .play {
+            padding-top: 0.1em;
+            width: 6%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .play {
+            padding-top: 0.1em;
+            width: 11%;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .play {
+            padding-top: 1.5em;
+            width: 20%;
+        }
     }
 
 /* Footer
